@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/bgjpg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.card {
+    width: 34em;
+    height: 45em;
+    background: #171717;
+    transition: 9s ease-in-out;
+    clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.card span {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: block;
+    padding-top: 2em;
+    font-size: 2em;
+}
+
+.card .info {
+    font-weight: 300;
+    color: white;
+    display: block;
+    text-align: center;
+    padding-top: 0.2em;
+    font-size: 1.42em;
+    margin: 2em;
+    margin-top: 2em;
+}
+
+.card .img {
+    width: 9.6em;
+    height: 9.6em;
+    background: white;
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 3.4em;
+}
+
+img {
+    width: 9.6em;
+    height: 9.6em;
+    border-radius: 30px;
+}
+
+.card {
+    text-align: center;
+    margin-top: 3.6em;
+}
+
+.card {
+    color: white;
+    transition: .9s ease-in-out;
+}
+
+.card:hover {
+    color: rgb(36, 116, 221);
+}
+
+.card button {
+    padding: 1.6em 3.4em;
+    display: block;
+    margin: auto;
+    border-radius: 50px;
+    border: none;
+    margin-top: 4em;
+    font-weight: bold;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    transition: .9s ease-in-out;
+}
+
+.card button:hover {
+    background: rgb(36, 116, 221);
+    color: white;
+}
