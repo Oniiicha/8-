@@ -12,7 +12,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(/bgjpg.jpg);
+    background: url(../bgjpg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -72,6 +72,7 @@ img {
 .card {
     color: white;
     transition: .9s ease-in-out;
+    animation: opacity 3s backwards;
 }
 
 .card:hover {
@@ -94,4 +95,14 @@ img {
 .card button:hover {
     background: rgb(36, 116, 221);
     color: white;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
